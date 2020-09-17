@@ -1,0 +1,106 @@
+@include "rna/sc_rna_counter_pd.mro"
+
+call SC_RNA_COUNTER_PD(
+    sample_def                  = [
+        {
+            "fastq_mode": "BCL_PROCESSOR",
+            "gem_group": 1,
+            "lanes": [
+                1,
+                2,
+                3,
+                4,
+            ],
+            "library_type": "Antibody Capture",
+            "read_path": "/mnt/analysis/marsoc/pipestances/HKTNWDSXX/BCL_PROCESSOR_PD/HKTNWDSXX/1015.12.15-0/BCL_PROCESSOR_PD/BCL_PROCESSOR/MERGE_FASTQS_FROM_TILES/fork0/join-u2112d72aca/files/demultiplexed_fastq_path",
+            "sample_indices": ["SI-P01-A11"],
+            "target_set": null,
+            "target_set_name": null,
+        },
+        {
+            "fastq_mode": "BCL_PROCESSOR",
+            "gem_group": 1,
+            "lanes": [
+                1,
+                2,
+                3,
+                4,
+            ],
+            "library_type": "Gene Expression",
+            "read_path": "/mnt/analysis/marsoc/pipestances/HKTNWDSXX/BCL_PROCESSOR_PD/HKTNWDSXX/1015.12.15-0/BCL_PROCESSOR_PD/BCL_PROCESSOR/MERGE_FASTQS_FROM_TILES/fork0/join-u2112d72aca/files/demultiplexed_fastq_path",
+            "sample_indices": ["SI-P2-A10"],
+            "target_set": null,
+            "target_set_name": null,
+        },
+    ],
+    sample_id                   = "123749_1049197",
+    chemistry                   = "SC5P_auto",
+    custom_chemistry_def        = null,
+    reference_path              = "/mnt/opt/refdata_cellranger/GRCh38-2020-A",
+    primers                     = [
+        {
+            "name": "switch_oligo",
+            "seq": "AAGCAGTGGTATCAACGCAGAGTACATGGG",
+        },
+        {
+            "name": "polyA",
+            "seq": "AAAAAAAAAAAAAAAAAAAA",
+        },
+        {
+            "name": "R1",
+            "seq": "ACACTCTTTCCCTACACGACGCTCTTCCGATCT",
+        },
+        {
+            "name": "R2",
+            "seq": "GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT",
+        },
+        {
+            "name": "P5",
+            "seq": "AATGATACGGCGACCACCGAGATCT",
+        },
+        {
+            "name": "P7",
+            "seq": "CAAGCAGAAGACGGCATACGAGAT",
+        },
+        {
+            "name": "R1nx",
+            "seq": "TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG",
+        },
+        {
+            "name": "R2nx",
+            "seq": "GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG",
+        },
+        {
+            "name": "X22_6",
+            "seq": "GCTTTAAGGCCGGTCCTAGCAA",
+        },
+        {
+            "name": "X22_8",
+            "seq": "GCTCACCTATTAGCGGCTAAGG",
+        },
+        {
+            "name": "ME",
+            "seq": "AGATGTGTATAAGAGACAG",
+        },
+    ],
+    recovered_cells             = 10000,
+    force_cells                 = null,
+    subsample_rate              = 1,
+    initial_reads               = null,
+    primer_initial_reads        = 1000000,
+    special_genomic_regions     = [
+        "/mnt/opt/meowmix_git/cellranger/fasta/GRCh38-2020-A/mtRNA.fa",
+        "/mnt/opt/meowmix_git/cellranger/fasta/GRCh38-2020-A/rRNA.fa",
+    ],
+    sample_desc                 = "89_VDJ v1_Ovarian_10000_Rep 1_meta",
+    r1_length                   = null,
+    r2_length                   = null,
+    trim_polya_min_score        = 20,
+    trim_tso_min_score          = 20,
+    no_secondary_analysis       = false,
+    no_target_umi_filter        = false,
+    feature_reference           = "/mnt/opt/refdata_cellranger/feature/antibody/BioLegend_5'_TotalC_14+iso_20180626.csv",
+    include_introns             = false,
+    genetic_demux_params        = null,
+    enforce_library_concordance = true,
+)

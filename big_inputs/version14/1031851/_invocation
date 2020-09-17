@@ -1,0 +1,76 @@
+@include "rna/sc_vdj_pd.mro"
+
+call SC_VDJ_PD(
+    sample_def                  = [
+        {
+            "fastq_mode": "BCL_PROCESSOR",
+            "gem_group": null,
+            "lanes": [
+                1,
+                2,
+            ],
+            "library_type": "VDJ",
+            "read_path": "/mnt/analysis/marsoc/pipestances/HCNM3DSXY/BCL_PROCESSOR_PD/HCNM3DSXY/4509.7.5-0/BCL_PROCESSOR_PD/BCL_PROCESSOR/MERGE_FASTQS_FROM_TILES/fork0/join-ude6ce5a404/files/demultiplexed_fastq_path",
+            "sample_indices": ["TAACGCGTGA"],
+            "target_set": null,
+            "target_set_name": null,
+        },
+    ],
+    sample_id                   = "1031851_1055870",
+    chemistry                   = "SCVDJ_auto",
+    custom_chemistry_def        = null,
+    reference_path              = "/mnt/opt/refdata_cellranger/GRCh38-2020-A",
+    primers                     = [
+        {
+            "name": "rt_primer",
+            "seq": "AAGCAGTGGTATCAACGCAGAGTACAT",
+        },
+        {
+            "name": "polyA",
+            "seq": "AAAAAAAAAAAAAAAAAAAA",
+        },
+        {
+            "name": "R1",
+            "seq": "ACACTCTTTCCCTACACGACGCTCTTCCGATCT",
+        },
+        {
+            "name": "R2",
+            "seq": "GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT",
+        },
+        {
+            "name": "P5",
+            "seq": "AATGATACGGCGACCACCGAGATCT",
+        },
+        {
+            "name": "P7",
+            "seq": "CAAGCAGAAGACGGCATACGAGAT",
+        },
+        {
+            "name": "spacer",
+            "seq": "TTTCTTATATGGG",
+        },
+        {
+            "name": "pAin",
+            "seq": "AGTCTCTCAGCTGGTACACG",
+        },
+        {
+            "name": "pBin",
+            "seq": "TCTGATGGCTCAAACACAGC",
+        },
+    ],
+    force_cells                 = null,
+    subsample_rate              = 1,
+    initial_reads               = null,
+    primer_initial_reads        = 1000000,
+    special_genomic_regions     = [
+        "/mnt/opt/meowmix_git/cellranger/fasta/GRCh38-2020-A/mtRNA.fa",
+        "/mnt/opt/meowmix_git/cellranger/fasta/GRCh38-2020-A/rRNA.fa",
+    ],
+    vdj_reference_path          = "/mnt/opt/refdata_cellranger/vdj/vdj_GRCh38_alts_ensembl-4.0.0",
+    denovo                      = false,
+    r1_length                   = null,
+    r2_length                   = null,
+    sample_desc                 = "PBMC_1k_16+3Ab_v2_Naive_R1_Ig",
+    ground_truth_clonotype_path = null,
+    inner_enrichment_primers    = null,
+)
