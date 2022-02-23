@@ -1,0 +1,38 @@
+This directory contains files from Wang et al. 2021 Nature Communications,
+"Single-cell RNA sequencing of peripheral blood mononuclear cells from acute
+Kawasaki disease patients." The DOI for the paper is 10.1038/s41467-021-25771-5.
+
+While information for up to 9 humans was deposited in GSE168732 (GEO deposition,
+full link https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE168732), only 7
+humans' data was submitted in a form that could be replicated/reconstructed. The
+files we downloaded from GEO were `filtered_contig_annotations.csv` and
+`filtered_contig.fasta`. Information about the donors can be found in the paper
+though a short summary of the samples is provided below.
+
+From these files we created files all_contig_annotations.json, using a program
+json_from_filtered that is in the enclone repo as enclone_tools/src/bin/json_from_filtered.rs.
+
+Note that the resulting all_contig_annotations.json files do not include annotation information,
+so to use them with enclone, one either needs to specify BUILT_IN or else REF=... RE.
+
+Kawasaki disease donors:
+
+* healthy (control) donors, named here normal1, normal2, normal3
+* patients (1,4,5,6)
+  - before IVIG therapy
+  - after IVIG therapy.
+
+Directory structure:
+
+├── README
+├── normal1
+├── normal2
+├── normal3
+├── patient1_before
+├── patient1_after
+├── patient4_before
+├── patient4_after
+├── patient5_before
+├── patient5_after
+├── patient6_before
+└── patient6_after
