@@ -1,0 +1,403 @@
+This is a set of publicly available 10x VDJ data downloaded through the
+iReceptor Gateway system (https://gateway.ireceptor.org). I've organized the
+samples within disease-specific folders. Each sample is labeled first with a
+donor ID and then a sample ID (e.g. 1_1 for a given disease is sample 1 from
+donor 1, 1_2 is sample 2 from donor 1).
+
+The information required to reconstruct the clonotypes can be found in the
+individual vdjserver.tsv files. The relevant/most helpful fields are as 
+follows below:
+
+  - cell_id: barcode
+  - consensus_count: UMI count of the chain associated with the barcode
+  - c_call: constant region assignment
+  - v_call: V gene assignment
+  - j_call: J gene assignment
+  - locus: one of IG[HLK]
+
+These data were collected from humans with several "biological states." The
+states are listed below:
+
+  - CIS: clinically isolated syndrome (acute neurological episode)
+  - COVID: SARS-CoV-2 infection
+  - Healthy: healthy donor samples
+  - Neuromyelitis optica: a spinal and eye nerve condition
+  - Neurosarcoidosis: central nervous system granulomas
+  - RRMS: relapsing-remitting multiple sclerosis, the most common type of MS
+  - Uveitis: eye inflammation
+
+Note that the counts for some of the individual samples can be quite low as
+they were sampled from tissues such as spinal fluid. A substantial amount of
+information about each sample is reported in its accompanying .txt and .json
+files.
+
+You can see the tree below:
+
+.
+├── CIS
+│   ├── 1_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_4
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   └── 2_4
+│       ├── info.txt
+│       ├── vdjserver-metadata.json
+│       └── vdjserver.tsv
+├── COVID
+│   ├── 1_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_1
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   ├── 2_2
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   ├── 2_3
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   ├── 3_1
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   ├── 3_2
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   ├── 3_3
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   ├── 4_1
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   ├── 4_2
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   ├── 4_3
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   ├── 5_1
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   ├── 5_2
+│   │   ├── airr-covid-19-metadata.json
+│   │   ├── airr-covid-19.tsv
+│   │   └── info.txt
+│   └── 5_3
+│       ├── airr-covid-19-metadata.json
+│       ├── airr-covid-19.tsv
+│       └── info.txt
+├── Healthy
+│   ├── 1_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_4
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_5
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 3_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 3_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   └── 3_3
+│       ├── info.txt
+│       ├── vdjserver-metadata.json
+│       └── vdjserver.tsv
+├── Neuromyelitis_optica
+│   ├── 1_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_4
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_5
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   └── 1_6
+│       ├── info.txt
+│       ├── vdjserver-metadata.json
+│       └── vdjserver.tsv
+├── Neurosarcoidosis
+│   ├── 1_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   └── 1_2
+│       ├── info.txt
+│       ├── vdjserver-metadata.json
+│       └── vdjserver.tsv
+├── RRMS
+│   ├── 10_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 10_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 10_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 11_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 11_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 12_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 12_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 12_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 12_4
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 13_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 13_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 13_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 14_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_4
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 1_5
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 2_4
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 3_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 3_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 3_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 3_4
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 4_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 4_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 4_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 4_4
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 4_5
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 5_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 5_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 5_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 6_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 6_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 6_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 7_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 7_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 7_3
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 7_4
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 8_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 9_1
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   ├── 9_2
+│   │   ├── info.txt
+│   │   ├── vdjserver-metadata.json
+│   │   └── vdjserver.tsv
+│   └── 9_3
+│       ├── info.txt
+│       ├── vdjserver-metadata.json
+│       └── vdjserver.tsv
+└── Uveitis
+    ├── 1_1
+    │   ├── info.txt
+    │   ├── vdjserver-metadata.json
+    │   └── vdjserver.tsv
+    ├── 1_2
+    │   ├── info.txt
+    │   ├── vdjserver-metadata.json
+    │   └── vdjserver.tsv
+    ├── 1_3
+    │   ├── info.txt
+    │   ├── vdjserver-metadata.json
+    │   └── vdjserver.tsv
+    └── 1_4
+        ├── info.txt
+        ├── vdjserver-metadata.json
+        └── vdjserver.tsv
