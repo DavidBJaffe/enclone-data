@@ -1,5 +1,0 @@
-#!/bin/csh
-
-foreach d (*/*)
-    cp /mnt/deck7/wyatt.mcdonnell/public_data/$d/airr-covid-19-metadata.json $d
-end
