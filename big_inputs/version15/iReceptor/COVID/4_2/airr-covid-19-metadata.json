@@ -1,0 +1,174 @@
+{
+    "Info": {
+        "title": "AIRR Data Commons API",
+        "description": "API response for repertoire query",
+        "version": 1.3,
+        "contact": {
+            "name": "AIRR Community",
+            "url": "https:\/\/github.com\/airr-community"
+        }
+    },
+    "Repertoire": [
+        {
+            "repertoire_id": "6079e75220652127e635159d",
+            "repertoire_name": null,
+            "repertoire_description": null,
+            "study": {
+                "study_id": "E-MTAB-9995",
+                "study_title": "Sokal et al., Maturation and persistence of the anti-SARS-CoV-2 memory B cell response",
+                "study_type": {
+                    "label": "Study",
+                    "id": "NCIT:C63536"
+                },
+                "study_description": "The B cell response against SARS-CoV-2 shows a temporal shift from an extrafollicular reaction that includes memory B cells against seasonal coronaviruses toward a germinal center dependent memory response encoding (spike-specific) neutralizing antibodies.",
+                "inclusion_exclusion_criteria": "Include: COVID",
+                "grants": "This work was supported by a grant from the Agence Nationale de la Recherche and the Fondation pour la Recherche Me\u00b4 dicale (ANR, MEMO-COV-2), by the Fondation Princesse Grace, and, in part by an ERC Advanced Investigator Grant (B-response). Assistance Publique \u2013 Hopitaux de Paris (AP-HP, Departement de la Recherche Clinique et du Developpement) was the promotor and the sponsor of MEMO-COV-2. A.S. was supported by a Poste d\u2019Accueil from Inserm, A.R. by an Annee Recherche from AP-HP and by a SNFMI fellowship.",
+                "collected_by": "Matthieu Mah\u00e9vas, matthieu.mahevas@aphp.fr",
+                "lab_name": "Reynaud Lab, Institut Necker Enfants Malades (INEM), INSERM",
+                "lab_address": "INSERM U1151\/CNRS UMS 8253, Universite de Paris, Paris, France",
+                "submitted_by": "Pascal Chappert, pascal.chappert@inserm.fr",
+                "pub_ids": "DOI: 10.1016\/j.cell.2021.01.050",
+                "keywords_study": [
+                    "contains_ig",
+                    "contains_paired_chain",
+                    "contains_single_cell"
+                ]
+            },
+            "subject": {
+                "subject_id": "S-Cov11",
+                "synthetic": false,
+                "species": {
+                    "label": "Homo sapiens",
+                    "id": "NCBITAXON:9606"
+                },
+                "sex": "male",
+                "age": null,
+                "age_min": 57,
+                "age_max": 57,
+                "age_unit": {
+                    "label": "year",
+                    "id": "UO:0000036"
+                },
+                "age_event": "Sample Collection",
+                "ancestry_population": null,
+                "ethnicity": null,
+                "race": null,
+                "strain_name": null,
+                "linked_subjects": null,
+                "link_type": null,
+                "diagnosis": [
+                    {
+                        "study_group_description": "Case",
+                        "disease_diagnosis": {
+                            "label": "COVID-19",
+                            "id": "DOID:0080600"
+                        },
+                        "disease_length": null,
+                        "disease_stage": "COVID_severe",
+                        "prior_therapies": "Hydroxychloroquine",
+                        "immunogen": null,
+                        "intervention": null,
+                        "medical_history": "Type II diabetes"
+                    }
+                ]
+            },
+            "sample": [
+                {
+                    "sample_processing_id": "6079e75220652127e635159d",
+                    "sample_id": "S-CoV11_M0_Sort2",
+                    "sample_type": "peripheral venous puncture",
+                    "tissue": {
+                        "label": "peripheral blood",
+                        "id": "UBERON:0013756"
+                    },
+                    "anatomic_site": null,
+                    "disease_state_sample": null,
+                    "collection_time_point_relative": "33 days",
+                    "collection_time_point_reference": "post symptoms onset",
+                    "biomaterial_provider": "Henri Mondor University Hospital (AP-HP), Cr\u00e9teil, France",
+                    "tissue_processing": null,
+                    "cell_subset": {
+                        "label": "mature B cell",
+                        "id": "CL:0000785"
+                    },
+                    "cell_phenotype": "mixture of antibody secreting cells (CL:0000946) and class switched memory B cells - isotype IgD- (CL:0000972): CD3-CD14-CD15-CD56-CD19+IgD-",
+                    "cell_species": {
+                        "label": "Homo sapiens",
+                        "id": "NCBITAXON:9606"
+                    },
+                    "single_cell": true,
+                    "cell_number": 20000,
+                    "cells_per_reaction": 1,
+                    "cell_storage": true,
+                    "cell_quality": "Viable cells were identified using a LIVE\/DEAD Fixable Aqua Dead Cell Stain Kit (Thermo Fisher Scientific)",
+                    "cell_isolation": null,
+                    "cell_processing_protocol": "PBMCs were isolated from venous blood samples via standard density gradient centrifugation and used after cryopreservation. Cells were thawed using RPMI-1640 (GIBCO) 10% FBS, washed twice and incubated with SARS-CoV-2 His-tagged spike protein in PBS (GIBCO) 2% FBS during 20 min on ice. Cells were washed and resuspended in the same conditions, then the fluorochrome-conjugated antibody cocktail including the 2 anti-His antibodies was added at pre-titrated concentrations for 20 min at 4C and viable cells were identified using a LIVE\/DEAD Fixable Aqua Dead Cell Stain Kit (Thermo Fisher Scientific) incubated with conjugated antibodies. Samples were acquired using a LSR Fortessa SORP (BD Biosciences). For cell sorting, cells were stained using the same protocol and then sorted in 96 plates using an ultra-purity mode on a MA900 cell sorter (SONY), or Aria III (BD Biosciences).",
+                    "template_class": "RNA",
+                    "template_quality": null,
+                    "template_amount": null,
+                    "library_generation_method": "RT(oligo-dT)+TS(UMI)+PCR",
+                    "library_generation_protocol": "The scRNA-seq libraries were generated using Chromium Next GEM Single Cell V(D)J Reagent Kit v.1.1 with Feature Barcoding (10X Genomics) according to the manufacturer\u2019s protocol. Briefly, cells were counted and up to 20000 cells were loaded in the 10X Genomics Chromium Controller to generate single-cell gel-beads in emulsion. After reverse transcription, gel-beads in emulsion were disrupted. Barcoded complementary DNA was isolated and amplified by PCR. Following fragmentation, end repair and A-tailing, sample indexes were added during index PCR. The purified libraries were sequenced on a Novaseq S2 flowcell (Illumina) with 26 cycles of read 1, 8 cycles of i7 index and 91 cycles of read 2, targeting a median depth of 5000 reads per cell.",
+                    "library_generation_kit_version": null,
+                    "pcr_target": [
+                        {
+                            "pcr_target_locus": "IGH",
+                            "forward_pcr_primer_target_location": null,
+                            "reverse_pcr_primer_target_location": "IGHA, +160; IGHD, +102; IGHE, +133; IGHG, +162; IGHM, +71"
+                        }
+                    ],
+                    "complete_sequences": "complete+untemplated",
+                    "physical_linkage": "none",
+                    "sequencing_run_id": null,
+                    "total_reads_passing_qc_filter": null,
+                    "sequencing_platform": "Illumina NovaSeq 6000",
+                    "sequencing_facility": null,
+                    "sequencing_run_date": null,
+                    "sequencing_kit": null,
+                    "sequencing_files": {
+                        "file_type": "fastq",
+                        "filename": null,
+                        "read_direction": null,
+                        "read_length": 26,
+                        "paired_filename": null,
+                        "paired_read_direction": null,
+                        "paired_read_length": 91
+                    }
+                }
+            ],
+            "data_processing": [
+                {
+                    "data_processing_id": "6079e75220652127e635159d",
+                    "primary_annotation": true,
+                    "software_versions": "Cell Ranger vdj pipeline (v.4.0.0); Igblast v1.16.0",
+                    "paired_reads_assembly": null,
+                    "quality_thresholds": null,
+                    "primer_match_cutoffs": null,
+                    "collapsing_method": null,
+                    "data_processing_protocols": "Processing by Authors: Processed FASTA sequences from 10X Genomics single-cell RNA sequencing were annotated using Igblast v1.16.0 against the human IMGT reference database. Non-productively rearranged sequences were removed at that step as well as sequences from cells that did not pass the initial QC cut-offs from scRNA-seq analysis. Cases of 10X Genomics barcodes with two or more consensus heavy chain sequences for which more than ten UMI were detected were generally flagged as potential doublets for removal from scRNA-seq analysis. Similarly, cases where no clear heavy chains could be attributed (none above 10 UMIs) were also flagged for removal. Two exceptions were made: 1\/ in cases of identical CDR3s but differing isotypes (c_call), in which case the isotype switched sequence was kept and UMI counts from both contigs were aggregated; and 2\/ in cases when one the heavy chains was clearly over represented at the UMI level and the second most represented sequences did not exceed ten UMIs, in which case the most represented sequence was kept.\n\nProcessing by iReceptor: Removed \" \" and NAs with AIRR_df.replace('\"', '') and AIRR_df.replace(\"NA\",\"\")",
+                    "data_processing_files": [
+                        "S-CoV11_M0_Sort2_B_VDJ_HC_filtered.tsv_clean.tsv"
+                    ],
+                    "germline_database": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0; IMGT",
+                    "analysis_provenance_id": null
+                }
+            ],
+            "_id": {
+                "$oid": "6079e75220652127e635159d"
+            },
+            "ir_record_number": null,
+            "study_contact": "Matthieu Mah\u00e9vas, matthieu.mahevas@aphp.fr, https:\/\/orcid.org\/0000-0001-9913-7741",
+            "ir_cell_storage": null,
+            "ir_curator_count": null,
+            "ir_sra_run_id": null,
+            "ir_library_source": null,
+            "ir_rearrangement_tool": null,
+            "ir_rearrangement_file_name": null,
+            "ir_ancillary_rearrangement_file_name": null,
+            "ir_rearrangement_number": null,
+            "ir_updated_at": "Fri Apr 16 2021 19:36:50 UTC",
+            "ir_created_at": "Fri Apr 16 2021 19:36:50 UTC",
+            "ir_sequence_count": 5858,
+            "ir_annotation_set_metadata_id": "6079e75220652127e635159d"
+        }
+    ]
+}

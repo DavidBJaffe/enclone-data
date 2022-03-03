@@ -1,0 +1,139 @@
+{
+    "Info": {
+        "title": "AIRR Data Commons API for VDJServer Community Data Portal",
+        "description": "VDJServer ADC API response for repertoire query",
+        "version": "1.3",
+        "contact": {
+            "name": "VDJServer",
+            "url": "http:\/\/vdjserver.org\/",
+            "email": "vdjserver@utsouthwestern.edu"
+        }
+    },
+    "Repertoire": [
+        {
+            "repertoire_id": "3152591615445036565-242ac117-0001-012",
+            "study": {
+                "study_id": "PRJNA642962",
+                "study_title": "Extrafollicular B cell responses correlate with neutralizing antibodies and morbidity in COVID-19",
+                "study_type": {
+                    "id": "NCIT:C16084",
+                    "label": "Observational Study"
+                },
+                "study_description": "A wide spectrum of clinical manifestations has become a hallmark of the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) COVID-19 pandemic, although the immunological underpinnings of diverse disease outcomes remain to be defined. We performed detailed characterization of B cell responses through high-dimensional flow cytometry to reveal substantial heterogeneity in both effector and immature populations. More notably, critically ill patients displayed hallmarks of extrafollicular B cell activation and shared B cell repertoire features previously described in autoimmune settings. Extrafollicular activation correlated strongly with large antibody-secreting cell expansion and early production of high concentrations of SARS-CoV-2-specific neutralizing antibodies. Yet, these patients had severe disease with elevated inflammatory biomarkers, multiorgan failure and death. Overall, these findings strongly suggest a pathogenic role for immune activation in subsets of patients with COVID-19. Our study provides further evidence that targeted immunomodulatory therapy may be beneficial in specific patient subpopulations and can be informed by careful immune profiling.",
+                "inclusion_exclusion_criteria": " Include: COVID, age 18 to 80 years; exclude: immunocompromised, oral or intravenous corticosteroids within preceding 14 days ",
+                "lab_name": "Ignacio Sanz",
+                "lab_address": "Department of Medicine, Division of Rheumatology, Lowance Center for Human Immunology, Emory University, Atlanta, GA, USA",
+                "submitted_by": "Scott Christley, scott.christley@utsouthwestern.edu, UT Southwestern Medical Center",
+                "grants": "National Institutes of Health grants UL TR000424 (Emory Library IT), R01-AG054991 (to W.T.H.), U19-AI110483 Emory Autoimmunity Center of Excellence (to I.S.), P01-AI125180-01 (to I.S. and F.E.-H.L.), R37\u2212AI049660 (to I.S.), 1R01AI121252 (to F.E.-H.L.), 1U01AI141993 (to F.E.-H.L.), R01 AI127828 (to J.E.C. and M.S.D.) and T32-HL116271-07 (to R.P.R.); HHS\/NIAID\/NIH contract 75N93019C00074 (to J.E.C.); Defense Advanced Research Project Agency grant HR001117S0019 (to J.E.C.); the Dolly Parton COVID-19 Research Fund at Vanderbilt; and a Fast Grants Award (to J.E.C.)",
+                "keywords_study": [
+                    "contains_ig",
+                    "contains_single_cell",
+                    "contains_paired_chain"
+                ],
+                "adc_publish_date": "2021-08-17T22:17:04.779Z",
+                "vdjserver_uuid": "4883439736075325931-242ac117-0001-012",
+                "vdjserver_keywords": [
+                    "is_10x_genomics"
+                ]
+            },
+            "subject": {
+                "subject_id": "Patient 1",
+                "synthetic": false,
+                "species": {
+                    "id": "NCBITAXON:9606",
+                    "label": "Homo sapiens"
+                },
+                "sex": "male",
+                "age_min": 34,
+                "age_max": 34,
+                "age_unit": {
+                    "id": "UO:0000036",
+                    "label": "year"
+                },
+                "age_event": "Sample Collection",
+                "race": "Black",
+                "diagnosis": [
+                    {
+                        "study_group_description": "Case",
+                        "disease_diagnosis": {
+                            "id": "DOID:0080600",
+                            "label": "COVID-19"
+                        },
+                        "disease_length": "12 days",
+                        "disease_stage": "COVID_severe"
+                    }
+                ],
+                "vdjserver_uuid": "3212721157589036565-242ac117-0001-012"
+            },
+            "sample": [
+                {
+                    "sample_id": "Patient1_AbSecretingCells",
+                    "sample_type": "peripheral venous puncture",
+                    "tissue": {
+                        "id": "UBERON:0013756",
+                        "label": "peripheral blood"
+                    },
+                    "collection_time_point_relative": "12 days",
+                    "collection_time_point_reference": "Symptom onset",
+                    "biomaterial_provider": "Emory University",
+                    "tissue_processing": "Peripheral blood samples were collected in heparin sodium tubes and processed within 6 h ofmcollection. PBMCs were isolated by density gradient centrifugation at 1,000g for 10 min. Aliquots from the plasma layer were collected and stored at \u221280 \u00b0C until use. PBMCs were washed twice with RPMI at 500g for 5 min. Viability was assessed using trypan blue exclusion, and live cells were counted using an automated hemocytometer.",
+                    "cell_subset": {
+                        "id": "CL:0000946",
+                        "label": "antibody secreting cell"
+                    },
+                    "cell_phenotype": "CD3- CD14- CD16- CD19+ CD38+ CD27+",
+                    "cell_species": {},
+                    "single_cell": true,
+                    "cell_number": 10000,
+                    "cells_per_reaction": 1,
+                    "cell_storage": true,
+                    "cell_quality": "Live cells as determined by live\/dead fixable aqua dead cell stain (ThermoFisher)",
+                    "cell_isolation": "Cells were incubated with a mix of fluorophore-conjugated antibodies and sorted on a three-laser BD FACS",
+                    "cell_processing_protocol": "Frozen cell suspensions were thawed at 37 \u00b0C in RPMI + 10% FCS and then washed and resuspended in FACS buffer (PBS + 2% FCS). The cells were incubated with a mix of fluorophore-conjugated antibodies for 30 min on ice. The cells were washed in PBS and then incubated with the live\/dead fixable aqua dead cell stain (ThermoFisher) for 10 min at 22 \u00b0C. After a final wash in FACS buffer, the cells were resuspended in FACS buffer at 10^7 cells per ml for cell sorting on a three-laser BD FACS (BD Biosciences).",
+                    "template_class": "RNA",
+                    "library_generation_method": "RT(oligo-dT)+TS(UMI)+PCR",
+                    "library_generation_protocol": "Cells were counted immediately using a hemocytometer and adjusted to 1,000 cells per \u03bcl to capture 10,000 single cells per sample loaded in the 10\u00d7 Genomics Chromium device according to the manufacturer\u2019s standard protocol (Chromium Next GEM Single Cell V(D)J Reagent Kits, v1.1). The 10\u00d7 Genomics v2 libraries were prepared using the 10x Genomics Chromium Single Cell 5\u2032 Library Construction Kit per the manufacturer\u2019s instructions. Libraries were sequenced on an Illumina NovaSeq (paired-end; 2 \u00d7 150 bp; read 1: 26 cycles; i7 index: 8 cycles, i5 index: 0 cycles; read 2: 98 cycles) such that more than 70% saturation could be achieved with a sequence depth of 5,000 reads per cell.",
+                    "library_generation_kit_version": "10x Genomics Chromium Next GEM Single Cell V(D)J Reagent Kit, v1.1; 10x Genomics Chromium Single Cell 5\u2032 Library Construction Kit",
+                    "pcr_target": [
+                        {
+                            "pcr_target_locus": "IGH",
+                            "reverse_pcr_primer_target_location": "IGHA, +160; IGHD, +102; IGHE, +133; IGHG, +162; IGHM, +71"
+                        },
+                        {
+                            "pcr_target_locus": "IGK",
+                            "reverse_pcr_primer_target_location": "IGKC, +136"
+                        },
+                        {
+                            "pcr_target_locus": "IGL",
+                            "reverse_pcr_primer_target_location": "IGLC, +205; IGLC, +211"
+                        }
+                    ],
+                    "complete_sequences": "complete+untemplated",
+                    "physical_linkage": "none",
+                    "sequencing_run_id": "SRR12113364",
+                    "sequencing_platform": "Illumina NovaSeq 6000",
+                    "sequencing_files": {
+                        "file_type": "fastq",
+                        "filename": "SRR12113364_2.fastq.gz",
+                        "read_length": 150,
+                        "paired_filename": "SRR12113364_3.fastq.gz",
+                        "paired_read_length": 150
+                    },
+                    "vdjserver_uuid": "3186393008064556565-242ac117-0001-012"
+                }
+            ],
+            "data_processing": [
+                {
+                    "data_processing_id": "de3a0167-d40e-416a-8c69-6ab6decbc7d9-007",
+                    "primary_annotation": true,
+                    "software_versions": "cellranger-ls5-6.1",
+                    "data_processing_files": [
+                        "SRR12113364.10x.igblast.airr.tsv.gz"
+                    ],
+                    "germline_database": "10X Genomics GRCh38 5.0.0, VDJServer IMGT 2019.01.23",
+                    "vdjserver_uuid": "3170974075471916565-242ac117-0001-012"
+                }
+            ]
+        }
+    ]
+}
