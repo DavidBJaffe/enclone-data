@@ -28,7 +28,6 @@ repo as well:
     Antigen Specificity." Cell. 2019 Dec 12; 179(7):1636-1646.e15.
     doi: 10.1016/j.cell.2019.11.003. Epub 2019 Nov 28.
 
-
 The information required to reconstruct the clonotypes can be found in the
 individual vdjserver.tsv files. The relevant/most helpful fields are as
 follows below:
