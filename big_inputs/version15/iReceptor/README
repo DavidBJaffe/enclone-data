@@ -1,11 +1,36 @@
 This is a set of publicly available 10x VDJ data downloaded through the
-iReceptor Gateway system (https://gateway.ireceptor.org). I've organized the
-samples within disease-specific folders. Each sample is labeled first with a
-donor ID and then a sample ID (e.g. 1_1 for a given disease is sample 1 from
-donor 1, 1_2 is sample 2 from donor 1).
+iReceptor Gateway system (https://gateway.ireceptor.org). The samples are found
+within disease-specific folders. Each sample is labeled first with a donor ID
+and then a sample ID (e.g. 1_1 for a given disease is sample 1 from donor 1, 1_2
+is sample 2 from donor 1). The data were accessed on 26 February 2022, using the
+following query criteria for iReceptor Gateway:
+
+  - PCR target: IGH
+  - Target substrate: RNA
+  - Sequencing platform: Illumina
+  - Study keywords: contains_single_cell
+  - Organism: Homo sapiens
+
+This query retrieved repertoire data from 4 studies. We previously replicated
+sequencing data from Setliff et al., and that these data are available in this
+repo as well:
+
+  - Ramesh et al. "A pathogenic and clonally expanded B cell transcriptome in
+    active multiple sclerosis." Proc Natl Acad Sci USA. 2020 Sep 15;
+    117(37):22932-22943. doi: 10.1073/pnas.2008523117. Epub 2020 Aug 28.
+  - Sokal et al. "Maturation and persistence of the anti-SARS-CoV-2 memory B
+    cell response." Cell. 2021 Mar 4; 184(5):1201-1213.e14.
+    doi: 10.1016/j.cell.2021.01.050. Epub 2021 Feb 2.
+  - Woodruff et al. "Extrafollicular B cell responses correlate with
+    neutralizing antibodies and morbidity in COVID-19." Nat Immunol. 2020 Dec;
+    21(12):1506-1516. doi: 10.1038/s41590-020-00814-z. Epub 2020 Oct 7.
+  - Setliff et al. "High-Throughput Mapping of B Cell Receptor Sequences to
+    Antigen Specificity." Cell. 2019 Dec 12; 179(7):1636-1646.e15.
+    doi: 10.1016/j.cell.2019.11.003. Epub 2019 Nov 28.
+
 
 The information required to reconstruct the clonotypes can be found in the
-individual vdjserver.tsv files. The relevant/most helpful fields are as 
+individual vdjserver.tsv files. The relevant/most helpful fields are as
 follows below:
 
   - cell_id: barcode
@@ -26,10 +51,10 @@ states are listed below:
   - RRMS: relapsing-remitting multiple sclerosis, the most common type of MS
   - Uveitis: eye inflammation
 
-Note that the counts for some of the individual samples can be quite low as
-they were sampled from tissues such as spinal fluid. A substantial amount of
-information about each sample is reported in its accompanying .txt and .json
-files.
+Note that the clonotype sequence counts for some of the individual samples can
+be quite low as they were sampled from tissues such as spinal fluid. A
+substantial amount of information about each sample is reported in its
+accompanying .txt and .json files.
 
 You can see the tree below:
 
