@@ -24,9 +24,6 @@ repo as well:
   - Woodruff et al. "Extrafollicular B cell responses correlate with
     neutralizing antibodies and morbidity in COVID-19." Nat Immunol. 2020 Dec;
     21(12):1506-1516. doi: 10.1038/s41590-020-00814-z. Epub 2020 Oct 7.
-  - Setliff et al. "High-Throughput Mapping of B Cell Receptor Sequences to
-    Antigen Specificity." Cell. 2019 Dec 12; 179(7):1636-1646.e15.
-    doi: 10.1016/j.cell.2019.11.003. Epub 2019 Nov 28.
 
 The information required to reconstruct the clonotypes can be found in the
 individual vdjserver.tsv files. The relevant/most helpful fields are as
