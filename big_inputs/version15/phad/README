@@ -18,7 +18,7 @@ All files were preprocessed with the enclone program shrink_json to remove annot
 thereby reduce file size.
 
 The file phad.meta may be used to run these data through enclone.  Use the BUILT_IN option
-to recover the annotations there were removed.
+to recover the annotations that were removed.
 
 Example:
 
