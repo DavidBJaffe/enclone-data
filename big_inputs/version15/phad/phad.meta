@@ -1,0 +1,80 @@
+bcr,donor,origin
+
+# donor 1, 2010, memory
+E-MTAB-11174/AT7ma_S7,d1,o1
+E-MTAB-11174/AT7mb_S1,d1,o1
+E-MTAB-11174/AT7mc_S2,d1,o1
+E-MTAB-11174/AT7md_S3,d1,o1
+E-MTAB-11174/AT7me_S4,d1,o1
+
+# donor 1, 2020, plasmablast
+E-MTAB-11174/AT6p2a_S3,d1,o2
+E-MTAB-11174/AT6p2b_S4,d1,o2
+E-MTAB-11174/AT6p2c_S5,d1,o2
+E-MTAB-11174/1apc_S1,d1,o2
+E-MTAB-11174/1bpc_S2,d1,o2
+E-MTAB-11174/1cpc_S3,d1,o2
+E-MTAB-11174/1dpc_S4,d1,o2
+E-MTAB-11174/1epc_S5,d1,o2
+
+# donor 1, June 2018, plasmablast
+E-MTAB-11697/1a_S1,d1,o3
+E-MTAB-11697/1b_S2,d1,o3
+
+# donor 1, 2020, memory
+E-MTAB-11174/AT6md_S1,d1,o4
+E-MTAB-11174/AT6me_S2,d1,o4
+E-MTAB-11174/2a_S6,d1,o4
+E-MTAB-11174/2b_S7,d1,o4
+E-MTAB-11174/2c_S8,d1,o4
+
+# donor 1, Feb 2021, plasmablast and memory
+E-MTAB-11697/AT11mb_S2,d1,o5
+E-MTAB-11697/AT11mc_S3,d1,o5
+E-MTAB-11697/AT11md_S4,d1,o5
+E-MTAB-11697/AT11me_S5,d1,o5
+E-MTAB-11697/AT11mf_S6,d1,o5
+E-MTAB-11697/AT11mg_S7,d1,o5
+E-MTAB-11697/AT11mh_S8,d1,o5
+
+# donor 1, Nov 2018, plasmablast
+D1_Nov2018_PB/s71a_VDJ,d1,o6
+D1_Nov2018_PB/s71b_VDJ,d1,o6
+
+# donor 2, 2014, memory
+E-MTAB-11174/1a_S1,d2,o1
+E-MTAB-11174/1b_S2,d2,o1
+E-MTAB-11174/1c_S3,d2,o1
+E-MTAB-11174/1d_S4,d2,o1
+E-MTAB-11174/1e_S5,d2,o1
+E-MTAB-11174/1f_S6,d2,o1
+
+# donor 2, July 2020, memory
+E-MTAB-11174/3a_S3,d2,o2
+E-MTAB-11174/3b_S4,d2,o2
+E-MTAB-11174/3c_S5,d2,o2
+E-MTAB-11174/3d_S6,d2,o2
+E-MTAB-11174/3e_S7,d2,o2
+
+# donor 2, July 2020, plasmablast
+E-MTAB-11174/1_S1,d2,o3
+E-MTAB-11174/2_S2,d2,o3
+
+# donor 2, May 2020, memory
+E-MTAB-11174/3a_S4,d2,o4
+E-MTAB-11174/3b_S5,d2,o4
+E-MTAB-11174/3c_S6,d2,o4
+E-MTAB-11174/3d_S7,d2,o4
+E-MTAB-11174/3e_S8,d2,o4
+
+# donor 2, May 2020, plasmablast
+E-MTAB-11174/2a_S3,d2,o5
+E-MTAB-11174/1apc2_S1,d2,o5
+E-MTAB-11174/1bpc2_S2,d2,o5
+
+# donor 2, Nov 2020, plasmablast
+E-MTAB-11174/BT4p1_S1,d2,o6
+E-MTAB-11174/BT4p2_S2,d2,o6
+
+# donor 2, 2014, plasmablast
+E-MTAB-11174/2_S7,d2,o7

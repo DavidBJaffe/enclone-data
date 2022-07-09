@@ -1,0 +1,27 @@
+
+The data in this directory are from Phad et al. 2022. Clonal structure, stability and dynamics of 
+human memory B cells and circulating plasmablasts.  
+https://www.nature.com/articles/s41590-022-01230-1.pdf.
+
+Read data were downloaded from:
+https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-11697
+https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-11174
+and processed using CellRanger 6.1.
+
+Two datasets were not found in the above data and obtained separately from Ganesh Phad:
+D1_Nov2018_PB/s71a_VDJ
+D1_Nov2018_PB/s71b_VDJ
+
+All the data are contained in files all_contig_annotations.json.lz4.
+
+All files were preprocessed with the enclone program shrink_json to remove annotations and
+thereby reduce file size.
+
+The file phad.meta may be used to run these data through enclone.  Use the BUILT_IN option
+to recover the annotations there were removed.
+
+Example:
+
+enclone PRE=enclone-data/big_inputs/version15/phad META=phad.meta BUILT_IN NOPRINT SUMMARY
+
+where the path after PRE= should be the complete path to this directory.
